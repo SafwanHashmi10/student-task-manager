@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Task Manager</h1>
+        <p>Manage your daily tasks</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">My Tasks</a>
+        <a href="#">Completed</a>
+    </nav>
+
+    <main>
+
+        <section class="summary">
+            <h2>My Tasks</h2>
+
+            <p>Total Tasks: <span id="totalTasks">0</span></p>
+            <p>Completed: <span id="completedTasks">0</span></p>
+            <p>Pending: <span id="pendingTasks">0</span></p>
+        </section>
+
+        <section class="add-task">
+            <h2>Add New Task</h2>
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a task"
+            >
+
+            <button onclick="addTask()">Add Task</button>
+        </section>
+
+        <section class="tasks">
+            <h2>Task List</h2>
+
+            <ul id="taskList">
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Task Manager &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
